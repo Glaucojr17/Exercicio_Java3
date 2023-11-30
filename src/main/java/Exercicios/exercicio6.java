@@ -15,7 +15,7 @@ public class exercicio6 {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Informe primeiro sua altura (ex: 1.78): ");
+        System.out.println("Informe primeiro sua altura (ex: 1,78): ");
         alt = input.nextDouble();
 
         System.out.println("Informe o seu sexo (1 para Masculino e 2 para Feminino): ");
@@ -23,11 +23,12 @@ public class exercicio6 {
 
         if (sexo == '1') {
             mnc = ((72.7 * alt) - 58);
-            System.out.println("O seu peso ideal e: "mnc);
+            System.out.println("O seu peso ideal e: " + mnc);
         } else {
             mnc = ((62.1 * alt) - 44.7);
-            System.out.println("O seu peso ideal é: "mnc);
+            System.out.println("O seu peso ideal é: " + mnc);
         }
 
         input.close();
     }
+}
